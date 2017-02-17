@@ -24,12 +24,13 @@ FORMS    += wlcamera.ui
 
 
 
-LIBS += -L"C:/Program Files/Basler/pylon 5/Development/lib/Win32" -lPylonC_MD_VC120\
--lPylonGUI_MD_VC120_v5_0\
--lPylonUtility_MD_VC120_v5_0\
--lPylonBase_MD_VC120_v5_0\
+CONFIG(debug, debug|release):LIBS += -L"C:/Program Files/Basler/pylon 5/Development/lib/Win32" -lPylonGUI_MD_VC120_v5_0\
 -lGCBase_MD_VC120_v3_0_Basler_pylon_v5_0\
 -lGenApi_MD_VC120_v3_0_Basler_pylon_v5_0\
+-lPylonC_MD_VC120\
+-lPylonUtility_MD_VC120_v5_0\
+-lPylonBase_MD_VC120_v5_0\
+
 
 INCLUDEPATH += "C:/Program Files/Basler/pylon 5/Development/include"
 
